@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 16
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.m4104_2015_2016_tp2_calculatrice"
+        minSdkVersion 10
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('/home/bourasseau/AndroidStudioProjects/M4104_2015_2016_tp2_calculatrice_a_completer3/libs/parser.jar')
+    compile files('src/main/java/com/farida/m4104_2015_2016_tp2_calculatrice/parser/parser.jar')
+    compile files('/home/bourasseau/AndroidStudioProjects/M4104_2015_2016_tp2_calculatrice_a_completer3/libs/output_jar.jar')
+}
